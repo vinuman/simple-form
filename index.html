@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+	<script src="index.js"></script>
+    <h1>New Connection Registration form</h1>
+    <form action="#" method="post">
+        <div>
+            <div class="title">
+                <label for="email">Email Address:</label>
+            </div>
+            
+            <input class="form-control" type="email" placeholder="Email address" name="email" required>
+        </div>
+        <div>
+            <div class="title">
+                <label  for="mob">Phone number:</label>
+            </div>
+            
+            <input class="form-control" type="tel" name="mob" minlength="10" maxlength="10" pattern="^[6-9]\d{9}$" required>
+        </div> 
+        <div>
+            <div class="title">
+                <label for="fname">Full Name:</label>
+            </div>
+            
+            <input class="form-control" id="fname" type="text" placeholder="First name" name="fname" required>
+            <input class="form-control" id="lname" type="text" placeholder="Last name" name="lname" required>
+        </div>
+        <div>
+            <div class="title">
+                <label for="address">Address:</label>
+            </div>
+            
+            <input class="form-control" type="text" placeholder="Street Address" name="street" required><br><br>
+            <input class="form-control" type="text" placeholder="Office, suite, Apartment" name="add">
+        </div>
+        <div>
+            <div class="title">
+                <label for="city">City:</label>
+            </div>
+            
+            <input class="form-control" type="text" name="city" required>
+            <select name="state" id="state">
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Odisha">Odisha</option>
+                <option value="New Delhi">New Delhi</option>
+            </select>
+            <input class="form-control" id="zip-code" type="number" placeholder="Zip code" name="zip" minlength="6" required>
+        </div>
+        <div class="questions">
+            <div class="title">
+                <label for="radio-tech">What radio technologies are you using?</label>
+            </div>
+            
+            <input  type="checkbox" name="net-1" value="2G">2G
+            <input type="checkbox" name="net-2" value="3G">3G
+            <input  type="checkbox" name="net-3" value="4G">4G
+            <input  type="checkbox" name="net-4" value="5    G">5G
+        </div>
+        <div class="questions">
+            <div class="title">
+                <label for="date-use">How much data do you expect to use each month?</label>
+            </div>
+           
+            <input type="radio" name="net" value="0-50 MB">0-50 MB
+            <input type="radio" name="net" value="50-150 MB">50-150 MB
+            <input type="radio" name="net" value="150-250 MB">150-250 MB
+            <input type="radio" name="net" value="250-550 MB">250-550 MB
+        </div>
+        <div>
+            <div class="title">
+                <label for="subscription">Subscription Duration:</label>
+            </div>
+
+            <input class="form-control" id="sub1" type="date" name="date">
+            <input class="form-control" id="sub2" type="month" name="month">
+            <label class="title"  for="to">To</label>
+            <input class="form-control" id="sub3" type="date" name="date">
+            <input class="form-control" id="sub4" type="month" name="month">
+            
+        <div class="sub">
+            <input class="btn" type="submit" value="Submit">
+            <input class="btn1" type="reset" value="Reset form">
+        </div>   
+            
+        </div>
+    </form>
+  </body>
+</html>
